@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6E8EFB, #88D3CE); /* New gradient background */
+    color: #ffffff; /* Light text for better contrast */
+    overflow-x: hidden;
+}
+
+header {
+    color: #ffffff;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.2); /* Semi-transparent background for the header */
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background-color: #ffffff;
+    color: #6E8EFB; /* Adjusted hover color for better visibility */
+}
+
+section {
+    padding: 60px 100px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5.5em; /* Larger for emphasis */
+    margin-bottom: 0.5em;
+    color: #88D3CE; /* Contrasting color for h1 */
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.25em;
+    color: #6E8EFB; /* Contrasting color for h2 */
+}
+
+h3 {
+    font-size: 2em;
+    margin-bottom: 0.25em;
+    color: #ffffff; /* Keeping h3 white for consistency */
+}
+
+/* Additional styling for buttons, links, and other elements can follow... */
+#contact {
+    background-color:linear-gradient(135deg, #6E8EFB, #88D3CE); /* Darker shade for contrast */
+    color: #ffffff;
+    padding: 4rem 0;
+  }
+  
+  #contact .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: .5rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .form-group textarea {
+    resize: vertical; /* Allows vertical resizing, not horizontal */
+  }
+  
+  button[type="submit"] {
+    background-color: #00ff95; /* Bright color for visibility */
+    color: #09009f;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #00cc7a; /* Darker shade on hover for feedback */
+  }
+  
+  @media (max-width: 768px) {
+    #contact .container {
+      width: 100%;
+    }
+  
+    #contact h2 {
+      font-size: 2rem;
+    }
+  }
+  
