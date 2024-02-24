@@ -49,3 +49,17 @@ $('[data-animate="true"]').each(function (i) {
     }
   });
 });
+
+$(document).ready(function () {
+    $('#upload-form').submit(function (event) {
+        event.preventDefault();
+        var fileInput = document.getElementById('file-upload');
+        if (fileInput.files.length > 0) {
+            var file = fileInput.files[0];
+            // Now you can send this file to the server
+            // You might use FormData and XMLHttpRequest or fetch API for this
+        } else {
+            alert('Please select a file to upload');
+        }
+    });
+});
